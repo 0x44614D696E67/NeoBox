@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NeoBox (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "NeoBox (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--  HeaderIcon="{wuc:BitmapIcon Source=Assets/Fluent/settings.png}"  -->
+<Page
+    x:Class="NeoBox.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wuc="using:WinUICommunity"
+    Background="Transparent"
+    mc:Ignorable="d">
+    <ScrollView
+        Margin="{ThemeResource ContentPageMargin}"
+        HorizontalAlignment="Stretch"
+        VerticalScrollBarVisibility="Auto">
+        <StackPanel
+            Margin="0"
+            wuc:PanelAttach.ChildrenTransitions="Default"
+            Spacing="5">
+            <wuc:SettingsCard
+                x:Uid="SettingsPage_Card_GeneralSetting"
+                x:Name="GeneralSetting"
+                Command="{x:Bind ViewModel.GoToSettingPageCommand}"
+                CommandParameter="{Binding ElementName=GeneralSetting}"
+                HeaderIcon="{wuc:FontIcon Glyph=&#xE115;}"
+                IsClickEnabled="True"
+                Tag="GeneralSettingPage" />
+
+            <wuc:SettingsCard
+                x:Uid="SettingsPage_Card_ThemeSetting"
+                x:Name="ThemeSetting"
+                Command="{x:Bind ViewModel.GoToSettingPageCommand}"
+                CommandParameter="{Binding ElementName=ThemeSetting}"
+                HeaderIcon="{wuc:FontIcon Glyph=&#xE790;}"
+                IsClickEnabled="True"
+                Tag="ThemeSettingPage" />
+
+            <wuc:SettingsCard
+                x:Uid="SettingsPage_Card_AppDateSetting"
+                x:Name="AppUpdateSetting"
+                Command="{x:Bind ViewModel.GoToSettingPageCommand}"
+                CommandParameter="{Binding ElementName=AppUpdateSetting}"
+                HeaderIcon="{wuc:FontIcon Glyph=&#xE117;}"
+                IsClickEnabled="True"
+                Tag="AppUpdateSettingPage" />
+
+            <wuc:SettingsCard
+                x:Uid="SettingsPage_Card_AboutSetting"
+                x:Name="AboutSetting"
+                Command="{x:Bind ViewModel.GoToSettingPageCommand}"
+                CommandParameter="{Binding ElementName=AboutSetting}"
+                HeaderIcon="{wuc:FontIcon Glyph=&#xE946;}"
+                IsClickEnabled="True"
+                Tag="AboutUsSettingPage" />
+
+        </StackPanel>
+    </ScrollView>
+</Page>
+

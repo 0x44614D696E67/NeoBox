@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="NeoBox.Views.HomeLandingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
+    xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wuc="using:WinUICommunity"
+    mc:Ignorable="d">
+
+    <ScrollViewer
+            HorizontalScrollBarVisibility="Visible"
+            HorizontalScrollMode="Auto"
+            VerticalScrollBarVisibility="Visible"
+            VerticalScrollMode="Auto">
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="Expander">
+                    <Setter Property="HorizontalAlignment" Value="Stretch" />
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </StackPanel.Resources>
+
+            <wuc:AllLandingPage
+                    x:Name="allLandingPage"
+                    HeaderImage="{ThemeResource HeaderCover}"
+                    HeaderOverlayImage="{ThemeResource HeaderCover}"
+                    HeaderText=" "
+                    HeaderImageHeight="300">
+                <i:Interaction.Behaviors>
+                    <ic:EventTriggerBehavior EventName="OnItemClick">
+                        <ic:EventTriggerBehavior.Actions>
+                            <ic:InvokeCommandAction Command="{x:Bind ViewModel.ItemClickCommand}" />
+                        </ic:EventTriggerBehavior.Actions>
+                    </ic:EventTriggerBehavior>
+                </i:Interaction.Behaviors>
+            </wuc:AllLandingPage>
+
+            
+
+            <TextBlock Text="{x:Bind ApplicationVersion}"
+                       Style="{StaticResource BodyStrongTextBlockStyle}"
+                       Margin="36, -340, 0, 0"/>
+
+            <TextBlock Text="{x:Bind ApplicationName}"
+                       Style="{StaticResource TitleLargeTextBlockStyle}"
+                       Margin="36, -322, 0, 0"/>
+            
+            <Line Stroke="{ThemeResource Line}"
+                  X1="35" Y1="0"
+                  X2="110" Y2="0"
+                  StrokeThickness="1"
+                  Margin="0, -255, 0, 0"/>
+
+            <TextBlock x:Uid="HomeLandingPage_BIText"
+                       Style="{StaticResource BodyTextBlockStyle}"
+                       Margin="36, -240, 0, 0"/>
+            
+        </StackPanel>
+    </ScrollViewer>
+</Page>
+
