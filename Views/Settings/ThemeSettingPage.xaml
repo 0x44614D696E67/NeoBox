@@ -20,13 +20,16 @@
                                             Margin="0, -21, 0, 0"/>
 
             <wuc:SettingsCard
-                Description="选择您的应用主题"
-                Header="应用主题"
+                x:Name="AppThemeCard"
+                x:Uid="ThemeSettingsPage_Card_AppThemeCard"
                 HeaderIcon="{wuc:FontIcon Glyph = &#xE790;}">
                 <ComboBox x:Name="CmbTheme">
-                    <ComboBoxItem Content="浅色" Tag="Light" />
-                    <ComboBoxItem Content="深色" Tag="Dark" />
-                    <ComboBoxItem Content="默认" Tag="Default" />
+                    <ComboBoxItem Tag="Light"
+                                  x:Uid="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Light"/>
+                    <ComboBoxItem Tag="Dark" 
+                                  x:Uid="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Dark"/>
+                    <ComboBoxItem Tag="Default" 
+                                  x:Uid="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Default"/>
                     <i:Interaction.Behaviors>
                         <ic:EventTriggerBehavior EventName="SelectionChanged">
                             <ic:EventTriggerBehavior.Actions>
@@ -37,13 +40,16 @@
                 </ComboBox>
             </wuc:SettingsCard>
             <wuc:SettingsCard
-                Description="更改应用程序背景"
-                Header="背景材料"
+                x:Name="AppBgCard"
+                x:Uid="ThemeSettingsPage_Card_AppBgCard"
                 HeaderIcon="{wuc:FontIcon Glyph = &#xE81E;}">
                 <ComboBox x:Name="CmbBackdrop" >
-                    <ComboBoxItem Content="云母" Tag="Mica" />
-                    <ComboBoxItem Content="厚云母" Tag="MicaAlt" />
-                    <ComboBoxItem Content="亚克力" Tag="DesktopAcrylic" />
+                    <ComboBoxItem Tag="Mica"
+                                  x:Uid="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_Mica"/>
+                    <ComboBoxItem Tag="MicaAlt"
+                                  x:Uid="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_MicaAlt"/>
+                    <ComboBoxItem Tag="DesktopAcrylic"
+                                  x:Uid="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_Acrylic"/>
                     <i:Interaction.Behaviors>
                         <ic:EventTriggerBehavior EventName="SelectionChanged">
                             <ic:EventTriggerBehavior.Actions>

@@ -9,7 +9,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <BreadcrumbBar ItemsSource="{x:Bind ViewModel.BreadcrumbBarCollection, Mode=OneWay}" Margin="0, 0, 0, 16">
+    <BreadcrumbBar ItemsSource="{x:Bind ViewModel.BreadcrumbBarCollection, Mode=OneWay}"
+                   Margin="0, 0, 0, 0">
         <BreadcrumbBar.ItemTemplate>
             <DataTemplate x:DataType="x:String">
                 <TextBlock Style="{ThemeResource TitleTextBlockStyle}" Text="{x:Bind}" />

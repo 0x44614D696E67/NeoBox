@@ -117,4 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutUsSettingPage_Expander_AboutUsSettings.Description" xml:space="preserve">
+    <value>A software that modifies the system</value>
+  </data>
+  <data name="AboutUsSettingPage_Expander_AboutUsSettings.Header" xml:space="preserve">
+    <value>NeoBox</value>
+  </data>
+  <data name="AboutUsSettingPage_Expander_UpdateNotes.Header" xml:space="preserve">
+    <value>Update Notes</value>
+  </data>
+  <data name="AppUpdateSettingPage_Card_Description_TextBlock.Text" xml:space="preserve">
+    <value>Last update check</value>
+  </data>
+  <data name="HomeLandingPage_BIText.Text" xml:space="preserve">
+    <value>A software that modifies the system</value>
+  </data>
+  <data name="SettingsPage_Card_AboutSetting.Description" xml:space="preserve">
+    <value>About apps and developers</value>
+  </data>
+  <data name="SettingsPage_Card_AboutSetting.Header" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="SettingsPage_Card_AppDateSetting.Description" xml:space="preserve">
+    <value>Update the app</value>
+  </data>
+  <data name="SettingsPage_Card_AppDateSetting.Header" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="SettingsPage_Card_GeneralSetting.Description" xml:space="preserve">
+    <value>Change the app settings</value>
+  </data>
+  <data name="SettingsPage_Card_GeneralSetting.Header" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SettingsPage_Card_ThemeSetting.Description" xml:space="preserve">
+    <value>Choose your theme and background material</value>
+  </data>
+  <data name="SettingsPage_Card_ThemeSetting.Header" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard.Description" xml:space="preserve">
+    <value>Change the app background</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard.Header" xml:space="preserve">
+    <value>Background material</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_Acrylic.Content" xml:space="preserve">
+    <value>Acrylic</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_Mica.Content" xml:space="preserve">
+    <value>Mica</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_MicaAlt.Content" xml:space="preserve">
+    <value>MicaAlt</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard.Description" xml:space="preserve">
+    <value>Select your app theme</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard.Header" xml:space="preserve">
+    <value>App Theme</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Dark.Content" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Default.Content" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Light.Content" xml:space="preserve">
+    <value>Light</value>
+  </data>
 </root>

@@ -1,4 +1,4 @@
-global using CommunityToolkit.Mvvm.ComponentModel;
+﻿global using CommunityToolkit.Mvvm.ComponentModel;
 global using CommunityToolkit.Mvvm.Input;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.UI;
@@ -10,4 +10,3 @@ global using NeoBox.ViewModels;
 global using NeoBox.Views;
 global using WinUICommunity;
 global using static NeoBox.Common.AppHelper;
-

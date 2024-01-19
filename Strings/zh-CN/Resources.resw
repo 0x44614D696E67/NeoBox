@@ -156,4 +156,34 @@
   <data name="SettingsPage_Card_ThemeSetting.Header" xml:space="preserve">
     <value>外观</value>
   </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard.Description" xml:space="preserve">
+    <value>更改应用程序背景</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard.Header" xml:space="preserve">
+    <value>背景材料</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_Acrylic.Content" xml:space="preserve">
+    <value>亚克力</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_Mica.Content" xml:space="preserve">
+    <value>云母</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_MicaAlt.Content" xml:space="preserve">
+    <value>厚云母</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard.Description" xml:space="preserve">
+    <value>选择您的应用主题</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard.Header" xml:space="preserve">
+    <value>应用主题</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Dark.Content" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Default.Content" xml:space="preserve">
+    <value>默认</value>
+  </data>
+  <data name="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Light.Content" xml:space="preserve">
+    <value>浅色</value>
+  </data>
 </root>

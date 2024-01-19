@@ -43,6 +43,11 @@
         </uap:DefaultTile >
         <uap:SplashScreen Image="Assets\Store\SplashScreen.png" />
         <uap:LockScreen BadgeLogo="Assets\Store\BadgeLogo.png" Notification="badgeAndTileText"/>
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/>
+          <uap:Rotation Preference="portrait"/>
+          <uap:Rotation Preference="portraitFlipped"/>
+          <uap:Rotation Preference="landscapeFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
