@@ -32,17 +32,19 @@
                     TextChanged="AutoSuggestBox_TextChanged" />
             </wuc:TitleBar.Content>
             <wuc:TitleBar.Footer>
-                <Button
-                    x:Name="ThemeButton"
-                    Height="32"
-                    Margin="0,0,4,0"
-                    Click="ThemeButton_Click"
-                    Style="{ThemeResource SubtleButtonStyle}"
-                    ToolTipService.ToolTip="Toggle Theme">
-                    <Button.Content>
-                        <FontIcon FontSize="16" Glyph="&#xE793;" />
-                    </Button.Content>
-                </Button>
+                <StackPanel Orientation="Horizontal">
+                    <Button
+                        x:Name="ThemeButton"
+                        Height="32"
+                        Margin="10,0,4,0"
+                        Click="ThemeButton_Click"
+                        Style="{ThemeResource SubtleButtonStyle}"
+                        ToolTipService.ToolTip="Toggle Theme">
+                        <Button.Content>
+                            <FontIcon FontSize="16" Glyph="&#xE793;" />
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
             </wuc:TitleBar.Footer>
         </wuc:TitleBar>
 

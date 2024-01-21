@@ -8,6 +8,7 @@
     xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wuc="using:WinUICommunity"
+    xmlns:views="using:NeoBox.Views"
     mc:Ignorable="d">
 
     <ScrollViewer
@@ -23,7 +24,8 @@
                 </Style>
             </StackPanel.Resources>
 
-            <wuc:AllLandingPage
+            <StackPanel>
+                <wuc:AllLandingPage
                     x:Name="allLandingPage"
                     HeaderImage="{ThemeResource HeaderCover}"
                     HeaderOverlayImage="{ThemeResource HeaderCover}"
@@ -57,6 +59,18 @@
             <TextBlock x:Uid="HomeLandingPage_BIText"
                        Style="{StaticResource BodyTextBlockStyle}"
                        Margin="36, -240, 0, 0"/>
+            </StackPanel>
+
+            <FlipView MaxWidth="400" Height="270" Margin="4, -200, 0, 0">
+            </FlipView>
+
+            <StackPanel>
+                <TextBlock x:Name="HomeLandingPage_QuickLinks"
+                           x:Uid="HomeLandingPage_Text_QuickLinks"
+                           Margin="18, 0, 0, 0"
+                           Style="{StaticResource BodyStrongTextBlockStyle}"/>
+                
+            </StackPanel>
             
         </StackPanel>
     </ScrollViewer>

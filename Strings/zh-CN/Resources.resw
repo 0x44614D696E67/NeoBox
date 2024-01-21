@@ -132,6 +132,9 @@
   <data name="HomeLandingPage_BIText.Text" xml:space="preserve">
     <value>一个修改系统的软件</value>
   </data>
+  <data name="HomeLandingPage_Text_QuickLinks.Text" xml:space="preserve">
+    <value>快速链接</value>
+  </data>
   <data name="SettingsPage_Card_AboutSetting.Description" xml:space="preserve">
     <value>关于应用和开发者</value>
   </data>
