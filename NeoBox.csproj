@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\SystemInfo.xaml" />
+    <None Remove="Views\UserControls\ShowCardUserControl.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Page Remove="Views\SystemInfo.xaml" />
@@ -95,5 +96,10 @@
     <Content Update="Strings\en-US\Resources.resw">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\UserControls\ShowCardUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
   </ItemGroup>
 </Project>

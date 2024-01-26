@@ -39,13 +39,19 @@ public partial class App : Application
             return json;
         });
 
+        // Window
         services.AddTransient<MainViewModel>();
+        // Nav Show
+        services.AddTransient<HomeLandingViewModel>();
+        services.AddTransient<SettingsViewModel>();
+
+        // Settings Sub Pages
         services.AddTransient<GeneralSettingViewModel>();
         services.AddTransient<ThemeSettingViewModel>();
         services.AddTransient<AppUpdateSettingViewModel>();
         services.AddTransient<AboutUsSettingViewModel>();
-        services.AddTransient<HomeLandingViewModel>();
-        services.AddTransient<SettingsViewModel>();
+
+        // UserControls
         services.AddTransient<BreadCrumbBarViewModel>();
 
         return services.BuildServiceProvider();
