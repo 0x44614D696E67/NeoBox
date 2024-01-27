@@ -17,6 +17,15 @@
 
             <views:BreadcrumbBarUserControl Margin="0,-21,0,0" SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
 
+            <wuc:SettingsCard HeaderIcon="{wuc:FontIcon Glyph=&#xE7B8;}"
+                              Header="This Is SettingsCard's Header."
+                              Description="This Is SettingsCard's Description."
+                              IsClickEnabled="True">
+                <wuc:SettingsCard.Content>
+                    <ToggleButton/>
+                </wuc:SettingsCard.Content>
+            </wuc:SettingsCard>
+
         </StackPanel>
     </ScrollView>
 </Page>
