@@ -10,7 +10,7 @@
   <Identity
     Name="8b612491-1abe-45ac-a3ab-751b0525e3ea"
     Publisher="CN=MrPythonXiaoXiao"
-    Version="0.0.1.0" />
+    Version="0.0.2.0" />
 
   <mp:PhoneIdentity PhoneProductId="8b612491-1abe-45ac-a3ab-751b0525e3ea" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

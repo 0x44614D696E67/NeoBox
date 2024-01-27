@@ -68,22 +68,25 @@
             </StackPanel>
 
             <ScrollViewer
-                Margin="4,-270,0,0"
+                Margin="16,-370,0,0"
                 HorizontalScrollBarVisibility="Visible"
                 HorizontalScrollMode="Auto"
                 VerticalScrollBarVisibility="Visible"
                 VerticalScrollMode="Auto">
                 <StackPanel
-                    Height="270"
-                    Margin="4,25,0,0"
+                    Height="48"
+                    Margin="16,0,0,0"
                     Background="Transparent"
                     Orientation="Horizontal">
 
-                    <views:ShowCardUserControl
-                        x:Name="HomeLandingPage_ShowCard_CodeLink"
-                        x:Uid="HomeLandingPage_ShowCard_CodeLink"
-                        Link="https://github.com/MrPython-XiaoXiao/NeoBox"
-                        Source="{wuc:BitmapIcon Source=Assets/Store/StoreLogo.scale-400.png}" />
+                    <HyperlinkButton NavigateUri="https://github.com/MrPython-XiaoXiao/NeoBox/">
+                        <HyperlinkButton.Content>
+                            <StackPanel Background="Transparent" Orientation="Horizontal">
+                                <FontIcon Glyph="&#xE943;" />
+                                <TextBlock x:Uid="HomeLandingPage_HyperlinkButton_CodeLink" Margin="8,0,0,0" />
+                            </StackPanel>
+                        </HyperlinkButton.Content>
+                    </HyperlinkButton>
 
                 </StackPanel>
 

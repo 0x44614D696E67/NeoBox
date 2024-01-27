@@ -47,6 +47,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="Assets\Icon\GitHub.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="Views\SystemInfo.xaml" />
     <None Remove="Views\UserControls\ShowCardUserControl.xaml" />
   </ItemGroup>

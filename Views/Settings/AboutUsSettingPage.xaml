@@ -16,8 +16,8 @@
             <views:BreadcrumbBarUserControl Margin="0,-21,0,0" SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
 
             <wuc:SettingsExpander
-                x:Uid="AboutUsSettingPage_Expander_AboutUsSettings"
                 x:Name="AboutUs"
+                x:Uid="AboutUsSettingPage_Expander_AboutUsSettings"
                 HeaderIcon="{wuc:BitmapIcon Source=Assets/icon.png}"
                 IsExpanded="True">
 
@@ -28,15 +28,14 @@
                 <wuc:SettingsExpander.Items>
                     <wuc:SettingsCard HorizontalContentAlignment="Left" ContentAlignment="Left">
                         <StackPanel Orientation="Vertical" Spacing="5">
-                            <TextBlock Text="相关链接" Style="{StaticResource BodyStrongTextBlockStyle}"/>
-                            <HyperlinkButton Content="Source Code" NavigateUri="https://github.com/WinUICommunity/WinUICommunity" />
+                            <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="相关链接" />
+                            <HyperlinkButton Content="Source Code" NavigateUri="https://github.com/MrPython-XiaoXiao/NeoBox/" />
                         </StackPanel>
                     </wuc:SettingsCard>
                 </wuc:SettingsExpander.Items>
             </wuc:SettingsExpander>
 
-            <wuc:SettingsExpander x:Name="UpdateNotes"
-                                  x:Uid="AboutUsSettingPage_Expander_UpdateNotes">
+            <wuc:SettingsExpander x:Name="UpdateNotes" x:Uid="AboutUsSettingPage_Expander_UpdateNotes">
 
                 <wuc:SettingsExpander.Items>
                     <wuc:SettingsCard HorizontalContentAlignment="Left" ContentAlignment="Left" />

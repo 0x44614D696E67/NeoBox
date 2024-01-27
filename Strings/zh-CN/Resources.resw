@@ -132,11 +132,8 @@
   <data name="HomeLandingPage_BIText.Text" xml:space="preserve">
     <value>一个修改系统的软件</value>
   </data>
-  <data name="HomeLandingPage_ShowCard_CodeLink.Description" xml:space="preserve">
-    <value>去 GitHub 看看我的项目</value>
-  </data>
-  <data name="HomeLandingPage_ShowCard_CodeLink.Title" xml:space="preserve">
-    <value>开源链接</value>
+  <data name="HomeLandingPage_HyperlinkButton_CodeLink.Text" xml:space="preserve">
+    <value>源代码</value>
   </data>
   <data name="HomeLandingPage_Text_QuickLinks.Text" xml:space="preserve">
     <value>快速链接</value>
