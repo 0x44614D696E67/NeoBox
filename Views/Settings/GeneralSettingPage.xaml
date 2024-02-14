@@ -15,14 +15,15 @@
             wuc:PanelAttach.ChildrenTransitions="Default"
             Spacing="5">
 
-            <views:BreadcrumbBarUserControl Margin="0,-21,0,0" SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
+            <views:BreadcrumbBarUserControl Margin="0,-10,0,12" SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
 
-            <wuc:SettingsCard HeaderIcon="{wuc:FontIcon Glyph=&#xE7B8;}"
-                              Header="This Is SettingsCard's Header."
-                              Description="This Is SettingsCard's Description."
-                              IsClickEnabled="True">
+            <wuc:SettingsCard
+                Description="This Is SettingsCard's Description."
+                Header="This Is SettingsCard's Header."
+                HeaderIcon="{wuc:FontIcon Glyph=&#xE7B8;}"
+                IsClickEnabled="True">
                 <wuc:SettingsCard.Content>
-                    <ToggleButton/>
+                    <ToggleButton />
                 </wuc:SettingsCard.Content>
             </wuc:SettingsCard>
 

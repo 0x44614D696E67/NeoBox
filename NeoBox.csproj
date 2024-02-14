@@ -24,7 +24,7 @@
     <AppxPackageSigningTimestampDigestAlgorithm>SHA512</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
-    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <GenerateTestArtifacts>False</GenerateTestArtifacts>
     <AppxBundle>Auto</AppxBundle>
     <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
@@ -35,6 +35,7 @@
     <MultilingualFallbackLanguage>zh-CN</MultilingualFallbackLanguage>
     <TranslationReport Condition="'$(Configuration)' == 'Release'">true</TranslationReport>
     <SuppressPseudoWarning Condition="'$(Configuration)' == 'Debug'">true</SuppressPseudoWarning>
+    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Assets\**\*">
@@ -50,6 +51,8 @@
     <Content Remove="Assets\Icon\GitHub.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Views\PythonPage.xaml" />
+    <None Remove="Views\SearchPage.xaml" />
     <None Remove="Views\SystemInfo.xaml" />
     <None Remove="Views\UserControls\ShowCardUserControl.xaml" />
   </ItemGroup>
@@ -101,6 +104,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\PythonPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SearchPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
     <Page Update="Views\UserControls\ShowCardUserControl.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>

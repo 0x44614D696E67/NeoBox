@@ -13,7 +13,7 @@
             Margin="10"
             wuc:PanelAttach.ChildrenTransitions="Default"
             Spacing="5">
-            <views:BreadcrumbBarUserControl Margin="0,-21,0,0" SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
+            <views:BreadcrumbBarUserControl Margin="0,-10,0,12" SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
 
             <wuc:SettingsExpander
                 x:Name="AboutUs"

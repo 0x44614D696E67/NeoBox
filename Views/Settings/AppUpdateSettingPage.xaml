@@ -13,14 +13,12 @@
             Margin="10"
             wuc:PanelAttach.ChildrenTransitions="Default"
             Spacing="5">
-            <views:BreadcrumbBarUserControl Margin="0,-21,0,0" SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
+            <views:BreadcrumbBarUserControl Margin="0,-10,0,12" SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
 
-            <wuc:SettingsCard Header="{x:Bind ViewModel.CurrentVersion}"
-                              HeaderIcon="{wuc:FontIcon Glyph=&#xE117;}">
+            <wuc:SettingsCard Header="{x:Bind ViewModel.CurrentVersion}" HeaderIcon="{wuc:FontIcon Glyph=&#xE117;}">
                 <wuc:SettingsCard.Description>
                     <StackPanel Orientation="Horizontal" Spacing="5">
-                        <TextBlock Style="{StaticResource SecondaryTextStyle}"
-                                   x:Uid="AppUpdateSettingPage_Card_Description_TextBlock"/>
+                        <TextBlock x:Uid="AppUpdateSettingPage_Card_Description_TextBlock" Style="{StaticResource SecondaryTextStyle}" />
                         <TextBlock
                             FlowDirection="LeftToRight"
                             Style="{StaticResource SecondaryTextStyle}"
@@ -39,8 +37,7 @@
                 </StackPanel>
             </wuc:SettingsCard>
 
-            <wuc:SettingsCard Header="{x:Bind ViewModel.LoadingStatus, Mode=OneWay}"
-                              HeaderIcon="{wuc:FontIcon Glyph=&#xE946;}">
+            <wuc:SettingsCard Header="{x:Bind ViewModel.LoadingStatus, Mode=OneWay}" HeaderIcon="{wuc:FontIcon Glyph=&#xE946;}">
                 <wuc:SettingsCard.Description>
                     <HyperlinkButton
                         Padding="5,0"

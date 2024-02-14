@@ -11,10 +11,12 @@ public sealed partial class MainPage : Page
 {
     public MainViewModel ViewModel { get; }
     public IThemeService ThemeService;
+    public bool isChoose = false;
 
-    private List<string> Cats = new List<string>()
+    public static List<string> Cats = new List<string>()
     {
-        "XiaoXiao"
+        "XiaoXiao",
+        "XA"
     };
 
     public MainPage()
@@ -26,7 +28,7 @@ public sealed partial class MainPage : Page
         ViewModel.JsonNavigationViewService.ConfigJson("Assets/NavViewMenu/AppData.json");
 
         var WinUIManager = WinUIEx.WindowManager.Get(App.currentWindow);
-        WinUIManager.MinWidth = 900;
+        WinUIManager.MinWidth = 730;
         WinUIManager.MinHeight = 610;
         WinUIManager.Width = 1025;
         WinUIManager.Height = 610;
@@ -40,6 +42,7 @@ public sealed partial class MainPage : Page
             int theme = (int)key.GetValue("AppsUseLightTheme", -1);
             if (theme == 0) //暗黑模式
             {
+                
             }
             else if (theme == 1) //亮色模式
             {
@@ -85,13 +88,6 @@ public sealed partial class MainPage : Page
 
     private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
     {
-        /*
-        var viewModel = NavFrame.GetPageViewModel();
-        if (viewModel != null && viewModel is ITitleBarAutoSuggestBoxAware titleBarAutoSuggestBoxAware)
-        {
-            titleBarAutoSuggestBoxAware.OnAutoSuggestBoxTextChanged(sender, args);
-        }*/
-
         if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
         {
             var suitableItems = new List<string>();
@@ -119,10 +115,23 @@ public sealed partial class MainPage : Page
 
     private void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
     {
+        /*
         var viewModel = NavFrame.GetPageViewModel();
         if (viewModel != null && viewModel is ITitleBarAutoSuggestBoxAware titleBarAutoSuggestBoxAware)
         {
             titleBarAutoSuggestBoxAware.OnAutoSuggestBoxQuerySubmitted(sender, args);
+        }*/
+
+        this.NavFrame.Navigate(typeof(SearchPage), args.QueryText);
+    }
+
+    private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+    {
+        var selectedItem = (NavigationViewItem)args.SelectedItem;
+
+        if ((string)selectedItem.Tag == "HomeLandingPage")
+        {
+            NavFrame.Navigate(typeof(HomeLandingPage));
         }
     }
 }

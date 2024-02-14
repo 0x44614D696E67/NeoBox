@@ -1,4 +1,5 @@
-﻿using Windows.Storage;
+﻿using NeoBox.ViewModels;
+using Windows.Storage;
 
 namespace NeoBox;
 public partial class App : Application
@@ -41,9 +42,14 @@ public partial class App : Application
 
         // Window
         services.AddTransient<MainViewModel>();
+
+        // Search Page
+        services.AddTransient<SearchViewModel>();
+
         // Nav Show
         services.AddTransient<HomeLandingViewModel>();
         services.AddTransient<SettingsViewModel>();
+        services.AddTransient<PythonViewModel>();
 
         // Settings Sub Pages
         services.AddTransient<GeneralSettingViewModel>();
