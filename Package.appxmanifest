@@ -8,15 +8,15 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="8b612491-1abe-45ac-a3ab-751b0525e3ea"
-    Publisher="CN=MrPythonXiaoXiao"
-    Version="0.0.1.0" />
+    Name="6320Mr.Python-XiaoXiao.6012D55482E9"
+    Publisher="CN=F285E61A-3976-4D01-9057-119F47D4935A"
+    Version="0.1.13.0" />
 
-  <mp:PhoneIdentity PhoneProductId="8b612491-1abe-45ac-a3ab-751b0525e3ea" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="18df398e-9cec-4fb3-ab9c-7c7b9f62f8e2" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>NeoBox</DisplayName>
-    <PublisherDisplayName>Hello</PublisherDisplayName>
+    <DisplayName>Neo Box</DisplayName>
+    <PublisherDisplayName>Mr.Python - XiaoXiao</PublisherDisplayName>
     <Logo>Assets\Store\StoreLogo.png</Logo>
   </Properties>
 
@@ -34,7 +34,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="NeoBox"
+        DisplayName="Neo Box"
         Description="NeoBox"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Store\Square150x150Logo.png"
@@ -43,6 +43,11 @@
         </uap:DefaultTile >
         <uap:SplashScreen Image="Assets\Store\SplashScreen.png" />
         <uap:LockScreen BadgeLogo="Assets\Store\BadgeLogo.png" Notification="badgeAndTileText"/>
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/>
+          <uap:Rotation Preference="portrait"/>
+          <uap:Rotation Preference="portraitFlipped"/>
+          <uap:Rotation Preference="landscapeFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

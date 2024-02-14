@@ -7,14 +7,15 @@
     xmlns:i="using:Microsoft.Xaml.Interactivity"
     xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="using:NeoBox.Views"
     xmlns:wuc="using:WinUICommunity"
     mc:Ignorable="d">
 
     <ScrollViewer
-            HorizontalScrollBarVisibility="Visible"
-            HorizontalScrollMode="Auto"
-            VerticalScrollBarVisibility="Visible"
-            VerticalScrollMode="Auto">
+        HorizontalScrollBarVisibility="Visible"
+        HorizontalScrollMode="Auto"
+        VerticalScrollBarVisibility="Visible"
+        VerticalScrollMode="Auto">
         <StackPanel>
             <StackPanel.Resources>
                 <Style TargetType="Expander">
@@ -23,41 +24,83 @@
                 </Style>
             </StackPanel.Resources>
 
-            <wuc:AllLandingPage
+            <StackPanel>
+                <wuc:AllLandingPage
                     x:Name="allLandingPage"
                     HeaderImage="{ThemeResource HeaderCover}"
+                    HeaderImageHeight="300"
                     HeaderOverlayImage="{ThemeResource HeaderCover}"
-                    HeaderText=" "
-                    HeaderImageHeight="300">
-                <i:Interaction.Behaviors>
-                    <ic:EventTriggerBehavior EventName="OnItemClick">
-                        <ic:EventTriggerBehavior.Actions>
-                            <ic:InvokeCommandAction Command="{x:Bind ViewModel.ItemClickCommand}" />
-                        </ic:EventTriggerBehavior.Actions>
-                    </ic:EventTriggerBehavior>
-                </i:Interaction.Behaviors>
-            </wuc:AllLandingPage>
+                    HeaderText=" ">
+                    <i:Interaction.Behaviors>
+                        <ic:EventTriggerBehavior EventName="OnItemClick">
+                            <ic:EventTriggerBehavior.Actions>
+                                <ic:InvokeCommandAction Command="{x:Bind ViewModel.ItemClickCommand}" />
+                            </ic:EventTriggerBehavior.Actions>
+                        </ic:EventTriggerBehavior>
+                    </i:Interaction.Behaviors>
+                </wuc:AllLandingPage>
 
-            
 
-            <TextBlock Text="{x:Bind ApplicationVersion}"
-                       Style="{StaticResource BodyStrongTextBlockStyle}"
-                       Margin="36, -340, 0, 0"/>
 
-            <TextBlock Text="{x:Bind ApplicationName}"
-                       Style="{StaticResource TitleLargeTextBlockStyle}"
-                       Margin="36, -322, 0, 0"/>
-            
-            <Line Stroke="{ThemeResource Line}"
-                  X1="35" Y1="0"
-                  X2="110" Y2="0"
-                  StrokeThickness="1"
-                  Margin="0, -255, 0, 0"/>
+                <TextBlock
+                    Margin="36,-340,0,0"
+                    Style="{StaticResource BodyStrongTextBlockStyle}"
+                    Text="{x:Bind ApplicationVersion}" />
 
-            <TextBlock x:Uid="HomeLandingPage_BIText"
-                       Style="{StaticResource BodyTextBlockStyle}"
-                       Margin="36, -240, 0, 0"/>
-            
+                <TextBlock
+                    Margin="36,-322,0,0"
+                    Style="{StaticResource TitleLargeTextBlockStyle}"
+                    Text="{x:Bind ApplicationName}" />
+
+                <Line
+                    Margin="0,-255,0,0"
+                    Stroke="{ThemeResource Line}"
+                    StrokeThickness="1"
+                    X1="35"
+                    X2="110"
+                    Y1="0"
+                    Y2="0" />
+
+                <TextBlock
+                    x:Uid="HomeLandingPage_BIText"
+                    Margin="36,-245,0,0"
+                    Style="{StaticResource BodyTextBlockStyle}" />
+            </StackPanel>
+
+            <ScrollViewer
+                Margin="16,-408,0,0"
+                HorizontalScrollBarVisibility="Visible"
+                HorizontalScrollMode="Auto"
+                VerticalScrollBarVisibility="Visible"
+                VerticalScrollMode="Auto">
+                <StackPanel
+                    Height="48"
+                    Margin="16,0,0,0"
+                    Background="Transparent"
+                    Orientation="Horizontal">
+
+                    <HyperlinkButton NavigateUri="https://github.com/MrPython-XiaoXiao/NeoBox/">
+                        <HyperlinkButton.Content>
+                            <StackPanel Background="Transparent" Orientation="Horizontal">
+                                <FontIcon Glyph="&#xE943;" />
+                                <TextBlock x:Uid="HomeLandingPage_HyperlinkButton_CodeLink" Margin="8,0,0,0" />
+                            </StackPanel>
+                        </HyperlinkButton.Content>
+                    </HyperlinkButton>
+
+                </StackPanel>
+
+            </ScrollViewer>
+
+            <StackPanel>
+                <TextBlock
+                    x:Name="HomeLandingPage_QuickLinks"
+                    x:Uid="HomeLandingPage_Text_QuickLinks"
+                    Margin="18,-128,0,0"
+                    Style="{StaticResource BodyStrongTextBlockStyle}" />
+
+            </StackPanel>
+
         </StackPanel>
     </ScrollViewer>
 </Page>

@@ -31,7 +31,15 @@ public sealed partial class BreadcrumbBarUserControl : UserControl
 
     private void BreadcrumbBarUserControl_Loaded(object sender, RoutedEventArgs e)
     {
-        ViewModel.BreadcrumbBarCollection.Add("Settings");
+        if (IsChineseSimple())
+        {
+            ViewModel.BreadcrumbBarCollection.Add("设置");
+        }
+        else
+        {
+            ViewModel.BreadcrumbBarCollection.Add("Settings");
+        }
+        
         if (Items != null)
         {
             foreach (var item in Items)
@@ -43,6 +51,11 @@ public sealed partial class BreadcrumbBarUserControl : UserControl
         {
             ViewModel.BreadcrumbBarCollection.Add(SingleItem);
         }
+    }
+
+    public static bool IsChineseSimple()
+    {
+        return System.Threading.Thread.CurrentThread.CurrentCulture.Name == "zh-CN";
     }
 }
 

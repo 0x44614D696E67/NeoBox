@@ -1,3 +1,4 @@
+﻿using NeoBox.ViewModels;
 using Windows.Storage;
 
 namespace NeoBox;
@@ -39,13 +40,24 @@ public partial class App : Application
             return json;
         });
 
+        // Window
         services.AddTransient<MainViewModel>();
+
+        // Search Page
+        services.AddTransient<SearchViewModel>();
+
+        // Nav Show
+        services.AddTransient<HomeLandingViewModel>();
+        services.AddTransient<SettingsViewModel>();
+        services.AddTransient<PythonViewModel>();
+
+        // Settings Sub Pages
         services.AddTransient<GeneralSettingViewModel>();
         services.AddTransient<ThemeSettingViewModel>();
         services.AddTransient<AppUpdateSettingViewModel>();
         services.AddTransient<AboutUsSettingViewModel>();
-        services.AddTransient<HomeLandingViewModel>();
-        services.AddTransient<SettingsViewModel>();
+
+        // UserControls
         services.AddTransient<BreadCrumbBarViewModel>();
 
         return services.BuildServiceProvider();

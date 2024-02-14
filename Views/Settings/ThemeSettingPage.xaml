@@ -16,17 +16,16 @@
             wuc:PanelAttach.ChildrenTransitions="Default"
             Spacing="5">
 
-            <views:BreadcrumbBarUserControl SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" 
-                                            Margin="0, -21, 0, 0"/>
+            <views:BreadcrumbBarUserControl Margin="0,-10,0,12" SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
 
             <wuc:SettingsCard
-                Description="选择您的应用主题"
-                Header="应用主题"
-                HeaderIcon="{wuc:FontIcon Glyph = &#xE790;}">
+                x:Name="AppThemeCard"
+                x:Uid="ThemeSettingsPage_Card_AppThemeCard"
+                HeaderIcon="{wuc:FontIcon Glyph=&#xE790;}">
                 <ComboBox x:Name="CmbTheme">
-                    <ComboBoxItem Content="浅色" Tag="Light" />
-                    <ComboBoxItem Content="深色" Tag="Dark" />
-                    <ComboBoxItem Content="默认" Tag="Default" />
+                    <ComboBoxItem x:Uid="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Light" Tag="Light" />
+                    <ComboBoxItem x:Uid="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Dark" Tag="Dark" />
+                    <ComboBoxItem x:Uid="ThemeSettingsPage_Card_AppThemeCard_ComboBoxItem_Default" Tag="Default" />
                     <i:Interaction.Behaviors>
                         <ic:EventTriggerBehavior EventName="SelectionChanged">
                             <ic:EventTriggerBehavior.Actions>
@@ -37,13 +36,13 @@
                 </ComboBox>
             </wuc:SettingsCard>
             <wuc:SettingsCard
-                Description="更改应用程序背景"
-                Header="背景材料"
-                HeaderIcon="{wuc:FontIcon Glyph = &#xE81E;}">
-                <ComboBox x:Name="CmbBackdrop" >
-                    <ComboBoxItem Content="云母" Tag="Mica" />
-                    <ComboBoxItem Content="厚云母" Tag="MicaAlt" />
-                    <ComboBoxItem Content="亚克力" Tag="DesktopAcrylic" />
+                x:Name="AppBgCard"
+                x:Uid="ThemeSettingsPage_Card_AppBgCard"
+                HeaderIcon="{wuc:FontIcon Glyph=&#xE81E;}">
+                <ComboBox x:Name="CmbBackdrop">
+                    <ComboBoxItem x:Uid="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_Mica" Tag="Mica" />
+                    <ComboBoxItem x:Uid="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_MicaAlt" Tag="MicaAlt" />
+                    <ComboBoxItem x:Uid="ThemeSettingsPage_Card_AppBgCard_ComboBoxItem_Acrylic" Tag="DesktopAcrylic" />
                     <i:Interaction.Behaviors>
                         <ic:EventTriggerBehavior EventName="SelectionChanged">
                             <ic:EventTriggerBehavior.Actions>
@@ -54,11 +53,11 @@
                 </ComboBox>
             </wuc:SettingsCard>
             <wuc:SettingsCard
-                ActionIcon="{wuc:FontIcon Glyph = &#xE2B4;}"
+                ActionIcon="{wuc:FontIcon Glyph=&#xE2B4;}"
                 Command="{x:Bind ViewModel.OpenWindowsColorSettingsCommand}"
                 Description="更改 Windows 主题色"
                 Header="Windows 颜色设置"
-                HeaderIcon="{wuc:FontIcon Glyph = &#xE771;}"
+                HeaderIcon="{wuc:FontIcon Glyph=&#xE771;}"
                 IsClickEnabled="True" />
         </StackPanel>
     </ScrollView>

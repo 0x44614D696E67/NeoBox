@@ -2,16 +2,25 @@
     <ResourceDictionary.ThemeDictionaries>
         <ResourceDictionary x:Key="Light">
             <x:String x:Key="HeaderCover">/Assets/Cover/CoverLight.png</x:String>
+
             <Color x:Key="Line">#000000</Color>
+
+            <Style x:Key="ThemeCaptionTitleStyle" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="{StaticResource CaptionTextBlockFontSize}" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="Foreground" Value="#cdcecf" />
+            </Style>
         </ResourceDictionary>
 
         <ResourceDictionary x:Key="Dark">
             <x:String x:Key="HeaderCover">/Assets/Cover/CoverDark.png</x:String>
+
             <Color x:Key="Line">#FFFFFF</Color>
         </ResourceDictionary>
 
         <ResourceDictionary x:Key="HighContrast">
             <x:String x:Key="HeaderCover">/Assets/Cover/CoverDark.png</x:String>
+
             <Color x:Key="Line">#FFFFFF</Color>
         </ResourceDictionary>
     </ResourceDictionary.ThemeDictionaries>
