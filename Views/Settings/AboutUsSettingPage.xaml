@@ -30,6 +30,9 @@
                         <StackPanel Orientation="Vertical" Spacing="5">
                             <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="相关链接" />
                             <HyperlinkButton Content="Source Code" NavigateUri="https://github.com/MrPython-XiaoXiao/NeoBox/" />
+
+                            <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="隐私条款" />
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="实际上它连网都不连" />
                         </StackPanel>
                     </wuc:SettingsCard>
                 </wuc:SettingsExpander.Items>

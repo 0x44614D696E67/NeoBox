@@ -50,6 +50,7 @@ public partial class App : Application
         services.AddTransient<HomeLandingViewModel>();
         services.AddTransient<SettingsViewModel>();
         services.AddTransient<PythonViewModel>();
+        services.AddTransient<SystemInfoViewModel>();
 
         // Settings Sub Pages
         services.AddTransient<GeneralSettingViewModel>();

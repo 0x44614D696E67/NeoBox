@@ -1,9 +1,11 @@
 ﻿using System;
+using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.Win32;
 using NeoBox.User;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using WinUICommunity;
 
 namespace NeoBox.Views;
 
@@ -24,14 +26,17 @@ public sealed partial class MainPage : Page
         ViewModel = App.GetService<MainViewModel>();
         this.InitializeComponent();
         appTitleBar.Window = App.currentWindow;
+
         ViewModel.JsonNavigationViewService.Initialize(NavView, NavFrame);
         ViewModel.JsonNavigationViewService.ConfigJson("Assets/NavViewMenu/AppData.json");
+        ViewModel.JsonNavigationViewService.ConfigAutoSuggestBox(TitleBar_AutoSuggestBox);
 
         var WinUIManager = WinUIEx.WindowManager.Get(App.currentWindow);
-        WinUIManager.MinWidth = 730;
+        WinUIManager.MinWidth = 480;
         WinUIManager.MinHeight = 610;
         WinUIManager.Width = 1025;
         WinUIManager.Height = 610;
+        
     }
 
     private void SetTheme()

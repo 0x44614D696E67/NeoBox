@@ -26,6 +26,7 @@
             </wuc:TitleBar.Icon>
             <wuc:TitleBar.Content>
                 <AutoSuggestBox
+                    x:Name="TitleBar_AutoSuggestBox"
                     PlaceholderText="搜索点什么"
                     QueryIcon="Find"
                     QuerySubmitted="AutoSuggestBox_QuerySubmitted"

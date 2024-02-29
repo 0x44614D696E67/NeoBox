@@ -24,8 +24,19 @@
           "ImagePath": "ms-appx:///Assets/NavIcon/PythonInstall.png",
           "ImageIconPath": "ms-appx:///Assets/NavIcon/PythonInstall.png",
           "HideItem": true
+        },
+        {
+          "UniqueId": "NeoBox.Views.SystemInfoPage",
+          "Title": "System Info",
+          "Subtitle": " ",
+          "ImagePath": "ms-appx:///Assets/NavIcon/SysInfo.png",
+          "ImageIconPath": "ms-appx:///Assets/NavIcon/SysInfo.png",
+          "HideItem": true
         }
       ]
+
     }
+
   ]
+
 }
