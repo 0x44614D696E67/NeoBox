@@ -122,4 +122,7 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\SystemInfo\" />
+  </ItemGroup>
 </Project>

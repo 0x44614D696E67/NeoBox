@@ -24,8 +24,6 @@
                 Style="{StaticResource TitleTextBlockStyle}"
                 Text="System Info" />
 
-            
-
         </StackPanel>
     </ScrollView>
 </Page>
