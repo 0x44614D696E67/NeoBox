@@ -9,7 +9,7 @@ public sealed partial class AboutUsSettingPage : Page
     public AboutUsSettingPage()
     {
         ViewModel = App.GetService<AboutUsSettingViewModel>();
-        this.InitializeComponent();
+        InitializeComponent();
     }
 
     protected override void OnNavigatedTo(NavigationEventArgs e)

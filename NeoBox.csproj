@@ -49,11 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Assets\Icon\GitHub.png" />
+    <Content Remove="Assets\NavIcon\ADB.png" />
+    <Content Remove="Assets\NavIcon\SysInfo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\PythonPage.xaml" />
     <None Remove="Views\SearchPage.xaml" />
     <None Remove="Views\SystemInfo.xaml" />
+    <None Remove="Views\SystemInfoPage.xaml" />
     <None Remove="Views\UserControls\ShowCardUserControl.xaml" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +107,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\SystemInfoPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\PythonPage.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
@@ -114,5 +121,8 @@
     <Page Update="Views\UserControls\ShowCardUserControl.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\SystemInfo\" />
   </ItemGroup>
 </Project>

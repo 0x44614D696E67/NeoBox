@@ -1,4 +1,6 @@
-﻿using Microsoft.Windows.Security.AccessControl;
+﻿using Microsoft.UI.Xaml.Controls;
+using Microsoft.Windows.Security.AccessControl;
+using WinUICommunity;
 
 namespace NeoBox.Views;
 

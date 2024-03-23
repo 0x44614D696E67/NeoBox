@@ -63,12 +63,12 @@
 
                 <TextBlock
                     x:Uid="HomeLandingPage_BIText"
-                    Margin="36,-245,0,0"
+                    Margin="36,-248,0,0"
                     Style="{StaticResource BodyTextBlockStyle}" />
             </StackPanel>
 
             <ScrollViewer
-                Margin="16,-408,0,0"
+                Margin="16,-418,0,0"
                 HorizontalScrollBarVisibility="Visible"
                 HorizontalScrollMode="Auto"
                 VerticalScrollBarVisibility="Visible"
@@ -96,7 +96,7 @@
                 <TextBlock
                     x:Name="HomeLandingPage_QuickLinks"
                     x:Uid="HomeLandingPage_Text_QuickLinks"
-                    Margin="18,-128,0,0"
+                    Margin="32,-100,0,0"
                     Style="{StaticResource BodyStrongTextBlockStyle}" />
 
             </StackPanel>
